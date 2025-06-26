@@ -16,8 +16,8 @@ const mongoSanitize=require('express-mongo-sanitize');
 const helmet=require('helmet')
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
-const dbUrl='mongodb://localhost:27017/yelpcamp';
-//const dbUrl=process.env.DB_URL
+// const dbUrl='mongodb://localhost:27017/yelpcamp';
+const dbUrl=process.env.DB_URL
 
 const userRoutes = require('./routes/users');
 const campgroundRoutes = require('./routes/campgrounds');
