@@ -17,9 +17,13 @@ const helmet=require('helmet')
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
 // const dbUrl='mongodb://localhost:27017/yelpcamp';
+<<<<<<< HEAD
 const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/yelpcamp';
 
 
+=======
+const dbUrl = process.env.DATABASE_URL || 'mongodb://localhost:27017/yelpcamp';
+>>>>>>> 33f9546 (changed the database url)
 const userRoutes = require('./routes/users');
 const campgroundRoutes = require('./routes/campgrounds');
 const reviewRoutes = require('./routes/reviews');
