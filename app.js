@@ -35,6 +35,8 @@ db.once("open", () => {
     console.log("Database connected");
 });
 
+console.log("DATABASE_URL:", process.env.DATABASE_URL);
+
 const app = express();
 
 app.engine('ejs', ejsMate);
